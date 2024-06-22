@@ -17,14 +17,23 @@ The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 classes, with 6
 ## Training the Model
 
 ### Preparing the Data
- - 
+ - Setup: Imports TensorFlow and sets up necessary tools. Defines image dimensions, classes, and labels.
+ - Data: Loads CIFAR-10 dataset, creates backups, and preprocesses labels. Checks dataset shapes.
+ - Visualization & Normalization: Displays image details, converts to float32, and normalizes pixel values.
+ - Label Encoding: Converts labels to one-hot encoding using Keras utilities.
 
 ### Building the Network
- - 
+ - Model Setup: Imports TensorFlow/Keras components, defines epochs and batch_size, and initializes a Sequential model for image classification.
+ - Convolutional Layers: Builds multiple Conv2D layers with increasing filter sizes and 'relu' activation, incorporating MaxPooling2D, Dropout, and BatchNormalization for feature extraction.
+ - Additional Layers: Continues with more Conv2D, MaxPooling2D, Dropout, and BatchNormalization layers to further refine feature maps.
+ - Output Layers: Adds a Flatten layer to reshape data, followed by Dense layers for classification tasks, ending with a softmax activation to predict class probabilities.
+ - Summary: Prints a concise summary of the complete model architecture detailing layer types, parameters, and output dimensions.
 
 ### Compiling and Training the Model
- - 
-
+ - Compile Model: Configures the model with Adam optimizer, categorical crossentropy loss function, and accuracy metric.
+ - Training: Trains the model using training data, specified batch size and epochs, with validation data for evaluation, and shuffling enabled.
+ - Evaluation: Evaluates the model performance on test data and prints the test accuracy.
+ - Saving: Saves the trained model in both HDF5 (.h5) and TensorFlow SavedModel (.keras) formats for future use.
 
 ## Testing the Model
 
