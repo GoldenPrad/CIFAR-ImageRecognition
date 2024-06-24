@@ -38,7 +38,7 @@ The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 classes, with 6
 ## Testing the Model
 
 ### Basic Testing
- - Ensuring the model was working properly against test data sset as well as outside images.
+ - Ensuring the model was working properly against test data set as well as outside images.
    
 ### Test 1
  - Running a square image of a frog, or an airplane or any of the other classes through the network, and seeing what it returns.
